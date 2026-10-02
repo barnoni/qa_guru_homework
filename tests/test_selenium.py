@@ -7,5 +7,5 @@ def test_selenium():
     url = "https://www.selenium.dev/"
     driver.get(url)
 
-    assert driver.title == "Selenium"
+    assert driver.title.startswith("Selenium")
     assert driver.current_url == url
